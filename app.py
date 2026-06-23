@@ -12,9 +12,9 @@ st.write("Enter a financial news headline and predict market sentiment.")
 
 try:
     # Load model files
-    model = pickle.load(open("model/sentiment_model.pkl", "rb"))
-    tfidf = pickle.load(open("model/tfidf.pkl", "rb"))
-    encoder = pickle.load(open("model/label_encoder.pkl", "rb"))
+    model = pickle.load(open("sentiment_model.pkl", "rb"))
+    tfidf = pickle.load(open("tfidf.pkl", "rb"))
+    encoder = pickle.load(open("label_encoder.pkl", "rb"))
 
     st.success("Model loaded successfully!")
 
